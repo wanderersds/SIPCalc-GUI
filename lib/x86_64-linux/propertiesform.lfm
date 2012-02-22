@@ -1,0 +1,146 @@
+object FormProperties: TFormProperties
+  Left = 504
+  Height = 400
+  Top = 145
+  Width = 500
+  Caption = 'Настройки SIPCalc GUI'
+  ClientHeight = 400
+  ClientWidth = 500
+  OnShow = FormShow
+  Position = poMainFormCenter
+  SessionProperties = 'EditPath.Text'
+  LCLVersion = '0.9.30'
+  object GroupBox1: TGroupBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 0
+    Height = 105
+    Top = 0
+    Width = 500
+    Anchors = [akTop, akLeft, akRight]
+    Caption = 'Вид'
+    ClientHeight = 86
+    ClientWidth = 496
+    TabOrder = 0
+    object Label1: TLabel
+      AnchorSideLeft.Control = GroupBox1
+      AnchorSideTop.Control = GroupBox1
+      Left = 10
+      Height = 18
+      Top = 5
+      Width = 106
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      Caption = 'Шрифт вывода:'
+      ParentColor = False
+    end
+    object LabelFont: TLabel
+      AnchorSideLeft.Control = Label1
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = GroupBox1
+      AnchorSideRight.Control = GroupBox1
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = GroupBox1
+      AnchorSideBottom.Side = asrBottom
+      Left = 121
+      Height = 18
+      Top = 5
+      Width = 65
+      BorderSpacing.Left = 5
+      BorderSpacing.Top = 5
+      Caption = 'LabelFont'
+      ParentColor = False
+    end
+    object Button1: TButton
+      Left = 10
+      Height = 25
+      Top = 55
+      Width = 75
+      Caption = 'Изменить'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+    object Label2: TLabel
+      Left = 10
+      Height = 18
+      Top = 31
+      Width = 109
+      Caption = 'Размер шрифта:'
+      ParentColor = False
+    end
+    object LabelSize: TLabel
+      Left = 126
+      Height = 18
+      Top = 31
+      Width = 62
+      Caption = 'LabelSize'
+      ParentColor = False
+    end
+  end
+  object GroupBox2: TGroupBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = GroupBox1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 0
+    Height = 111
+    Top = 105
+    Width = 500
+    Anchors = [akTop, akLeft, akRight]
+    Caption = 'Пути'
+    ClientHeight = 92
+    ClientWidth = 496
+    TabOrder = 1
+    object Label3: TLabel
+      AnchorSideLeft.Control = GroupBox2
+      AnchorSideTop.Control = GroupBox2
+      Left = 10
+      Height = 18
+      Top = 5
+      Width = 92
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      Caption = 'Путь к sipcalc:'
+      ParentColor = False
+    end
+    object Button2: TButton
+      Left = 10
+      Height = 25
+      Top = 62
+      Width = 75
+      Caption = 'Изменить'
+      OnClick = Button2Click
+      TabOrder = 0
+    end
+    object EditPath: TEdit
+      Left = 10
+      Height = 27
+      Top = 30
+      Width = 212
+      ReadOnly = True
+      TabOrder = 1
+      Text = '/usr/local/bin/sipcalc'
+    end
+  end
+  object FontDialog1: TFontDialog
+    Width = 460
+    Height = 339
+    MinFontSize = 0
+    MaxFontSize = 0
+    left = 56
+    top = 296
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'sipcalc|sipcalc'
+    left = 144
+    top = 296
+  end
+  object XMLPropStoragePath: TXMLPropStorage
+    StoredValues = <>
+    left = 264
+    top = 296
+  end
+end

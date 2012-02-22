@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <TApplication>
+    <FormMain path="" FormMain_Width="945" FormMain_Height="434" MemoResult_FontName="Ubuntu Mono" MemoResult_FontSize="10" FormMain_WindowState="wsNormal" MemoResult_FontColor="536870912" MemoResult_FontPitch="fpDefault" MemoResult_FontStyle="[]" OpenDialog1_FileName="/usr/local/bin/sipcalc" MemoResult_FontHeight="-14" MemoResult_FontCharSet="1" MemoResult_FontQuality="fqDefault" MemoResult_FontOrientation="0"/>
+  </TApplication>
+</CONFIG>
